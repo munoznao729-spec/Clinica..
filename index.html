@@ -12,7 +12,9 @@
     <div class="logo-container">
       <a href="#" class="logo">
         <img src="imagenes/logotipo.svg" alt="Logo">
-        <h2>Clínica Veterinaria Mis Patas</h2>
+        <h2>Clínica Veterinaria
+          <br> 
+          Mis Patas</h2>
       </a>
     </div>
 
@@ -33,15 +35,17 @@
       <a data-section="consejos">Consejos</a>
       <a data-section="contacto">Contacto</a>
       <a data-section="citas">Citas</a>
-      <a data-section="tareas">Tareas</a>
     </nav>
-
     <!-- Barra de búsqueda -->
 <div class="search-wrap" role="search">
-  <span class="icon">🔎</span>
-  <input id="searchInput" type="text" placeholder="Buscar en toda la página..." aria-label="Buscar"/>
+  <input id="searchInput" type="text"
+         placeholder="Buscar..."
+         aria-label="Buscar"/>
+  <button id="searchBtn" type="button">Buscar</button>
 </div>
 
+<!-- Resultados rápidos (opcional) -->
+<div id="searchResults" class="search-results"></div>
   </header>
 
   <!-- INICIO -->
@@ -50,16 +54,12 @@
     <p>Tu mascota merece el mejor cuidado, con amor y profesionalismo.</p>
     <div class="carousel-container">
       <div class="carousel-slider">
-        <div class="slide"><img src="imagen/perro.png" alt="Descripción de perro 1"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+1" alt="Descripción de gato 1"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Perro+2" alt="Descripción de perro 2"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+2" alt="Descripción de gato 2"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+3" alt="Descripción de gato 3"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+4" alt="Descripción de gato 4"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Perro+3" alt="Descripción de perro 3"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+5" alt="Descripción de gato 5"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Perro+4" alt="Descripción de perro 4"></div>
-        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+6" alt="Descripción de gato 6"></div>
+        <div class="slide"><img src="imagenes/Caballo.jpg" alt="Descripción de perro 1"></div>
+        <div class="slide"><img src="imagenes/cabra.jpg" alt="Descripción de gato 1"></div>
+        <div class="slide"><img src="imagenes/Gato poco de  nieve.jpg" alt="Descripción de perro 2"></div>
+        <div class="slide"><img src="imagenes/Gato.jpg" alt="Descripción de gato 3"></div>
+        <div class="slide"><img src="imagenes/Nutria.jpg" alt="Descripción de gato 4"></div>
+        <div class="slide"><img src="imagenes/perritas cavalier king.jpg" alt="Descripción de gato 5"></div>
       </div>
       <div class="carousel-dots-container"></div>
       <div class="carousel-info-container">
@@ -72,16 +72,16 @@
     </div>
   </div>
     <div class="grid">
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+1"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+1"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+2"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+1"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+1"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+2"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+      <div class="gallery-card"><img src="imagenes/tortuga.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/toro.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/puerquito.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/perro.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/perro husky sibiriano.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/perro Boxer.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/perro Beagle.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/perritas cavalier king.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/Nutria.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/Caballo.jpg"></div>
     </div>
   </section>
 
@@ -125,10 +125,10 @@
   <section id="galeria">
     <h2>Mascotas Atendidas</h2>
     <div class="grid">
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+1"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+1"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+2"></div>
-      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+      <div class="gallery-card"><img src="imagenes/Nutria.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/tortuga.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/Gato.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/toro.jpg"></div>
     </div>
   </section>
 
@@ -212,29 +212,6 @@
       </form>
       <p id="msgCita"></p>
     </div>
-  </section>
-
-  <!-- TAREAS -->
-  <section id="tareas">
-    <h2>Asignación de Tareas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Tarea</th>
-                <th>Responsable</th>
-                <th>Fecha Límite</th>
-                <th>Estado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Diseño del logo</td><td>lisse</td><td>10/09/2025</td><td>Pendiente</td></tr>
-            <tr><td>Paleta de colores</td><td>isela</td><td>11/09/2025</td><td>Pendiente</td></tr>
-            <tr><td>HTML base</td><td>Estefani</td><td>12/09/2025</td><td>En Proceso</td></tr>
-            <tr><td>Integración de iconos</td><td>Nicole</td><td>13/09/2025</td><td>Pendiente</td></tr>
-            <tr><td>Formulario JS</td><td>Nicole</td><td>14/09/2025</td><td>Pendiente</td></tr>
-            <tr><td>Optimización móvil</td><td>Equipo</td><td>15/09/2025</td><td>Pendiente</td></tr>
-        </tbody>
-    </table>
   </section>
   <footer>
     <img src="" alt="WhatsApp">
