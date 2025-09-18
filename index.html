@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Veterinaria Mis Patas </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-container">
+      <a href="#" class="logo">
+        <img src="imagenes/logotipo.svg" alt="Logo">
+        <h2>Clínica Veterinaria Mis Patas</h2>
+      </a>
+    </div>
+
+    <!-- Barra de navegación con submenú -->
+    <nav class="navbar">
+      <a data-section="inicio" class="active">Inicio</a>
+      <div class="submenu">
+        <a class="submenu-btn">Servicios ▾</a>
+        <div class="submenu-content">
+          <a data-section="servicios">Todos</a>
+          <a data-section="servicios-perros">Perros</a>
+          <a data-section="servicios-gatos">Gatos</a>
+        </div>
+      </div>
+      <a data-section="galeria">Galería</a>
+      <a data-section="productos">Productos</a>
+      <a data-section="promociones">Promociones</a>
+      <a data-section="consejos">Consejos</a>
+      <a data-section="contacto">Contacto</a>
+      <a data-section="citas">Citas</a>
+      <a data-section="tareas">Tareas</a>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+<div class="search-wrap" role="search">
+  <span class="icon">🔎</span>
+  <input id="searchInput" type="text" placeholder="Buscar en toda la página..." aria-label="Buscar"/>
+</div>
+
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio" class="active">
+    <h2>Bienvenidos a Clinica Veterinaria Mis Patas 🐶</h2>
+    <p>Tu mascota merece el mejor cuidado, con amor y profesionalismo.</p>
+    <div class="carousel-container">
+      <div class="carousel-slider">
+        <div class="slide"><img src="imagen/perro.png" alt="Descripción de perro 1"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+1" alt="Descripción de gato 1"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Perro+2" alt="Descripción de perro 2"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+2" alt="Descripción de gato 2"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+3" alt="Descripción de gato 3"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+4" alt="Descripción de gato 4"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Perro+3" alt="Descripción de perro 3"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+5" alt="Descripción de gato 5"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Perro+4" alt="Descripción de perro 4"></div>
+        <div class="slide"><img src="https://via.placeholder.com/300x200?text=Gato+6" alt="Descripción de gato 6"></div>
+      </div>
+      <div class="carousel-dots-container"></div>
+      <div class="carousel-info-container">
+        <p id="carousel-description"></p>
+      </div>
+    </div>
+    <br>
+    <div class="titulo-container">
+      <h2>Los animales que atenderemos</h2>
+    </div>
+  </div>
+    <div class="grid">
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+1"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+1"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+2"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+1"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+1"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+2"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="grid">
+    <div class="service-card">🐶 Consultas generales</div>
+    <div class="service-card">💉 Vacunación</div>
+    <div class="service-card">⚕ Cirugías</div>
+    <div class="service-card">🦷 Limpieza dental</div>
+    <div class="service-card">✂ Estética canina y felina</div>
+  </div>
+</section>
+
+<!-- SERVICIOS PERROS -->
+<section id="servicios-perros">
+  <h2>Servicios para Perros 🐶</h2>
+  <div class="grid">
+    <div class="service-card">Baño y peluquería</div>
+    <div class="service-card">Vacunación canina</div>
+    <div class="service-card">Consulta general</div>
+    <div class="service-card">Cirugía especializada</div>
+    <div class="service-card">Entrenamiento básico</div>
+  </div>
+</section>
+
+<!-- SERVICIOS GATOS -->
+<section id="servicios-gatos">
+  <h2>Servicios para Gatos 🐱</h2>
+  <div class="grid">
+    <div class="service-card">Limpieza dental felina</div>
+    <div class="service-card">Vacunación felina</div>
+    <div class="service-card">Consulta especializada</div>
+    <div class="service-card">Corte de uñas y grooming</div>
+    <div class="service-card">Desparasitación</div>
+  </div>
+</section>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <h2>Mascotas Atendidas</h2>
+    <div class="grid">
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+1"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+1"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Perro+2"></div>
+      <div class="gallery-card"><img src="https://via.placeholder.com/300x200?text=Gato+2"></div>
+    </div>
+  </section>
+
+  <!-- CONSEJOS -->
+  <section id="consejos">
+    <h2>Consejos para el Cuidado Animal</h2>
+    <div class="grid">
+      <div class="tip-card">🐾 Alimentación balanceada</div>
+      <div class="tip-card">🚶 Paseos diarios</div>
+      <div class="tip-card">🩺 Revisiones periódicas</div>
+      <div class="tip-card">💧 Hidratación constante</div>
+      <div class="tip-card">🎾 Juego y actividad física</div>
+    </div>
+  </section>
+  <!-- NUEVA SECCIÓN: CATÁLOGO DE PRODUCTOS -->
+  <section id="productos">
+    <h2>Catálogo de Productos</h2>
+    <div class="catalog-grid">
+      <div class="catalog-card">
+        <img src="https://via.placeholder.com/250x180?text=Collar+Perro" alt="Collar">
+        <h3>Collar Ajustable</h3>
+        <p>Resistente y cómodo para tu mascota.</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="catalog-card">
+        <img src="https://via.placeholder.com/250x180?text=Alimento+Gato" alt="Alimento">
+        <h3>Alimento Premium Gato</h3>
+        <p>Nutrición completa y balanceada.</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="catalog-card">
+        <img src="https://via.placeholder.com/250x180?text=Juguete+Perro" alt="Juguete">
+        <h3>Juguete Mordedor</h3>
+        <p>Ideal para dientes sanos y diversión.</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUEVA SECCIÓN: PROMOCIONES -->
+  <section id="promociones">
+    <h2>Promociones Especiales</h2>
+    <div class="catalog-grid">
+      <div class="promo-card">
+        <img src="https://via.placeholder.com/250x180?text=2x1+Baño" alt="Promo 1">
+        <h3>2x1 en Baño Canino</h3>
+        <p>Trae dos mascotas y paga solo uno.</p>
+        <button class="btn-promo">Aprovechar</button>
+      </div>
+      <div class="promo-card">
+        <img src="https://via.placeholder.com/250x180?text=Descuento+Vacunas" alt="Promo 2">
+        <h3>Descuento en Vacunación</h3>
+        <p>20% de descuento en paquete anual.</p>
+        <button class="btn-promo">Aprovechar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="contact-card">
+        <h2>Contacto 🐾</h2>
+        <p><i class="fa-solid fa-map-location-dot"></i> San Salvador, El Salvador</p>
+        <p><i class="fa-solid fa-phone"></i> +503 2222-3333</p>
+        <p><i class="fa-solid fa-envelope"></i> contacto@amigofiel.com</p>
+    </div>
+    <iframe src="https://maps.google.com/maps?q=San%20Salvador&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- CITAS -->
+  <section id="citas">
+    <div class="cita-card">
+      <h2>Solicita tu Cita</h2>
+      <form id="formCita">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="text" placeholder="Teléfono" required>
+        <input type="date" required>
+        <textarea placeholder="Motivo de la cita" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="msgCita"></p>
+    </div>
+  </section>
+
+  <!-- TAREAS -->
+  <section id="tareas">
+    <h2>Asignación de Tareas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tarea</th>
+                <th>Responsable</th>
+                <th>Fecha Límite</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Diseño del logo</td><td>lisse</td><td>10/09/2025</td><td>Pendiente</td></tr>
+            <tr><td>Paleta de colores</td><td>isela</td><td>11/09/2025</td><td>Pendiente</td></tr>
+            <tr><td>HTML base</td><td>Estefani</td><td>12/09/2025</td><td>En Proceso</td></tr>
+            <tr><td>Integración de iconos</td><td>Nicole</td><td>13/09/2025</td><td>Pendiente</td></tr>
+            <tr><td>Formulario JS</td><td>Nicole</td><td>14/09/2025</td><td>Pendiente</td></tr>
+            <tr><td>Optimización móvil</td><td>Equipo</td><td>15/09/2025</td><td>Pendiente</td></tr>
+        </tbody>
+    </table>
+  </section>
+  <footer>
+    <img src="" alt="WhatsApp">
+    <img src="" alt="Facebook">
+    <img src="" alt="Instagram">
+    <img src="" alt="Tiktok">
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
