@@ -3,20 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clinica Veterinaria Mis Patas </title>
+  <title>Clinica Veterinaria Mis Patitas </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- HEADER -->
+  <!-- Menú superior con accesos rápidos -->
+  <div class="top-bar">
+    <div class="top-links">
+      <a href="#">Ayuda</a>
+      <a href="#">Mi Cuenta</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Soporte</a>
+    </div>
+
+  </div>
   <header class="header">
     <div class="logo-container">
       <a href="#" class="logo">
         <img src="imagenes/logotipo.svg" alt="Logo">
         <h2>Clínica Veterinaria
           <br> 
-          Mis Patas</h2>
+          Mis Patitas</h2>
       </a>
     </div>
+
+    <!-- Barra de búsqueda -->
+<div class="search-wrap" role="search">
+  <input id="searchInput" type="text"
+         placeholder="Buscar..."
+         aria-label="Buscar"/>
+  <button id="searchBtn" type="button">Buscar</button>
+</div>
+<!-- Resultados rápidos (opcional) -->
+<div id="searchResults" class="search-results"></div>
+  </header>
+
 
     <!-- Barra de navegación con submenú -->
     <nav class="navbar">
@@ -27,6 +49,7 @@
           <a data-section="servicios">Todos</a>
           <a data-section="servicios-perros">Perros</a>
           <a data-section="servicios-gatos">Gatos</a>
+          <a data-section="servicios-beneficios">beneficios</a>
         </div>
       </div>
       <a data-section="galeria">Galería</a>
@@ -35,31 +58,44 @@
       <a data-section="consejos">Consejos</a>
       <a data-section="contacto">Contacto</a>
       <a data-section="citas">Citas</a>
+      <a data-section="Publicaciones">Publicaciones</a>
     </nav>
-    <!-- Barra de búsqueda -->
-<div class="search-wrap" role="search">
-  <input id="searchInput" type="text"
-         placeholder="Buscar..."
-         aria-label="Buscar"/>
-  <button id="searchBtn" type="button">Buscar</button>
-</div>
-
-<!-- Resultados rápidos (opcional) -->
-<div id="searchResults" class="search-results"></div>
-  </header>
-
+    
   <!-- INICIO -->
   <section id="inicio" class="active">
-    <h2>Bienvenidos a Clinica Veterinaria Mis Patas 🐶</h2>
+    <h2>Bienvenidos a Clinica Veterinaria Mis Patitas 🐶</h2>
     <p>Tu mascota merece el mejor cuidado, con amor y profesionalismo.</p>
+    <!-- Historia y imagen al lado -->
+    <!-- Historia y imagen al lado -->
+<div class="story-container">
+  <div class="story-content">
+    <div class="story-text">
+      <h3>La historia de nuestra Veterinaria</h3>
+      <p>
+      </a>
+      En <strong>Clínica Veterinaria Mis Patas</strong> nacimos con el objetivo de brindar una atención de calidad a tus mascotas. Sabemos lo importante que es para ti el bienestar de tus animales, por eso nuestro equipo de profesionales se dedica a ofrecer un servicio cercano, amable y altamente capacitado, en un ambiente cálido y confiable.
+      </p>
+      <p>
+        Comenzamos con un pequeño equipo de veterinarios apasionados por la salud animal, y con el tiempo nos hemos expandido para ofrecer una amplia gama de servicios: desde consultas generales, hasta emergencias, cirugía y cuidado especializado. Gracias a nuestra dedicación, hoy somos reconocidos como uno de los centros veterinarios más confiables de la ciudad.
+      </p>
+      <p>
+        Nuestra misión es asegurarnos de que cada animal que pasa por nuestras puertas reciba el mejor tratamiento posible. Creemos en el cuidado preventivo, pero también estamos siempre listos para actuar rápidamente cuando se trata de una emergencia. ¡Tu mascota es parte de nuestra familia!
+      </p>
+    </div>
+    <!-- Imagen al lado -->
+    <div class="story-image">
+      <img src="imagenes/veterinaria animal.jpg" alt="Imagen de Veterinaria AnimalCare">
+    </div>
+  </div>
+</div>
     <div class="carousel-container">
       <div class="carousel-slider">
-        <div class="slide"><img src="imagenes/Caballo.jpg" alt="Descripción de perro 1"></div>
-        <div class="slide"><img src="imagenes/cabra.jpg" alt="Descripción de gato 1"></div>
-        <div class="slide"><img src="imagenes/Gato poco de  nieve.jpg" alt="Descripción de perro 2"></div>
-        <div class="slide"><img src="imagenes/Gato.jpg" alt="Descripción de gato 3"></div>
-        <div class="slide"><img src="imagenes/Nutria.jpg" alt="Descripción de gato 4"></div>
-        <div class="slide"><img src="imagenes/perritas cavalier king.jpg" alt="Descripción de gato 5"></div>
+        <div class="slide"><img src="imagen/perro.png" alt="Descripción de perro 1"></div>
+        <div class="slide"><img src="imagenes/ardila.jpg" alt="Descripción de gato 1"></div>
+        <div class="slide"><img src="imagenes/Caballo.jpg" alt="Descripción de perro 2"></div>
+        <div class="slide"><img src="imagenes/cabra.jpg" alt="Descripción de gato 3"></div>
+        <div class="slide"><img src="imagenes/cuyo.jpg" alt="Descripción de gato 4"></div>
+        <div class="slide"><img src="imagenes/Gato poco de  nieve.jpg" alt="Descripción de gato 5"></div>
       </div>
       <div class="carousel-dots-container"></div>
       <div class="carousel-info-container">
@@ -72,16 +108,16 @@
     </div>
   </div>
     <div class="grid">
+      <div class="gallery-card"><img src="imagenes/cuyo.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/Gato.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/koala.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/mapache.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/perro Beagle.jpg"></div>
       <div class="gallery-card"><img src="imagenes/tortuga.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/toro.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/puerquito.jpg"></div>
       <div class="gallery-card"><img src="imagenes/perro.jpg"></div>
       <div class="gallery-card"><img src="imagenes/perro husky sibiriano.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/perro Boxer.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/perro Beagle.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/perritas cavalier king.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/Nutria.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/Caballo.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/cebras.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/zorra.jpg"></div>
     </div>
   </section>
 
@@ -121,14 +157,25 @@
   </div>
 </section>
 
+<section id="servicios-beneficios">
+  <h2>Beneficios del Cuidado de un Animal 🐾</h2>
+  <div class="grid">
+    <div class="benefit-card">Mejora la salud emocional</div>
+    <div class="benefit-card">Fomenta la responsabilidad</div>
+    <div class="benefit-card">Reduce el estrés y la ansiedad</div>
+    <div class="benefit-card">Promueve la actividad física</div>
+    <div class="benefit-card">Fortalece el vínculo afectivo</div>
+  </div>
+</section>
+
   <!-- GALERÍA -->
   <section id="galeria">
     <h2>Mascotas Atendidas</h2>
     <div class="grid">
       <div class="gallery-card"><img src="imagenes/Nutria.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/tortuga.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/Gato.jpg"></div>
-      <div class="gallery-card"><img src="imagenes/toro.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/Gato poco de  nieve.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/puerquito.jpg"></div>
+      <div class="gallery-card"><img src="imagenes/conejo.jpg"></div>
     </div>
   </section>
 
@@ -144,82 +191,227 @@
     </div>
   </section>
   <!-- NUEVA SECCIÓN: CATÁLOGO DE PRODUCTOS -->
-  <section id="productos">
-    <h2>Catálogo de Productos</h2>
-    <div class="catalog-grid">
-      <div class="catalog-card">
-        <img src="https://via.placeholder.com/250x180?text=Collar+Perro" alt="Collar">
-        <h3>Collar Ajustable</h3>
-        <p>Resistente y cómodo para tu mascota.</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-      <div class="catalog-card">
-        <img src="https://via.placeholder.com/250x180?text=Alimento+Gato" alt="Alimento">
-        <h3>Alimento Premium Gato</h3>
-        <p>Nutrición completa y balanceada.</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-      <div class="catalog-card">
-        <img src="https://via.placeholder.com/250x180?text=Juguete+Perro" alt="Juguete">
-        <h3>Juguete Mordedor</h3>
-        <p>Ideal para dientes sanos y diversión.</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-    </div>
-  </section>
+<section id="productos">
+  <h2>Catálogo de Productos</h2>
+  
+  <!-- Buscador -->
+  <div class="search-container">
+    <input type="text" id="product-search" placeholder="Buscar productos..." onkeyup="searchProducts()">
+  </div>
 
+  <div class="catalog-grid">
+    <div class="catalog-card" data-name="Collar Ajustable" data-description="Resistente y cómodo para tu mascota.">
+      <img src="imagenes/collar.jpg" alt="Collar">
+      <h3>Collar Ajustable</h3>
+      <p>Resistente y cómodo para tu mascota.</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="catalog-card" data-name="Alimento Premium Gato" data-description="Nutrición completa y balanceada.">
+      <img src="imagenes/almentacion.jpg" alt="Alimento">
+      <h3>Alimento Premium Gato</h3>
+      <p>Nutrición completa y balanceada.</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="catalog-card" data-name="Juguete Mordedor" data-description="Ideal para dientes sanos y diversión.">
+      <img src="imagenes/juguetes.jpg" alt="Juguete">
+      <h3>Juguete Mordedor</h3>
+      <p>Ideal para dientes sanos y diversión.</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </div>
+</section>
   <!-- NUEVA SECCIÓN: PROMOCIONES -->
-  <section id="promociones">
-    <h2>Promociones Especiales</h2>
-    <div class="catalog-grid">
-      <div class="promo-card">
-        <img src="https://via.placeholder.com/250x180?text=2x1+Baño" alt="Promo 1">
-        <h3>2x1 en Baño Canino</h3>
-        <p>Trae dos mascotas y paga solo uno.</p>
-        <button class="btn-promo">Aprovechar</button>
-      </div>
-      <div class="promo-card">
-        <img src="https://via.placeholder.com/250x180?text=Descuento+Vacunas" alt="Promo 2">
-        <h3>Descuento en Vacunación</h3>
-        <p>20% de descuento en paquete anual.</p>
-        <button class="btn-promo">Aprovechar</button>
-      </div>
-    </div>
-  </section>
+<section id="promociones">
+  <h2>Promociones Especiales</h2>
+  
+  <!-- Buscador específico para promociones -->
+  <div class="search-container">
+    <input type="text" id="promo-search" placeholder="Buscar promociones..." onkeyup="searchPromotions()">
+  </div>
 
+  <div class="catalog-grid">
+    <div class="promo-card" data-name="2x1 en Baño Canino" data-description="Trae dos mascotas y paga solo uno.">
+      <img src="imagenes/Baño canino.jpg" alt="Promo 1">
+      <h3>2x1 en Baño Canino</h3>
+      <p>Trae dos mascotas y paga solo uno.</p>
+      <button class="btn-promo">Aprovechar</button>
+    </div>
+    <div class="promo-card" data-name="Descuento en Vacunación" data-description="20% de descuento en paquete anual.">
+      <img src="imagenes/vacunacion .jpg" alt="Promo 2">
+      <h3>Descuento en Vacunación</h3>
+      <p>20% de descuento en paquete anual.</p>
+      <button class="btn-promo">Aprovechar</button>
+    </div>
+  </div>
+</section>
   <!-- CONTACTO -->
   <section id="contacto">
     <div class="contact-card">
         <h2>Contacto 🐾</h2>
         <p><i class="fa-solid fa-map-location-dot"></i> San Salvador, El Salvador</p>
         <p><i class="fa-solid fa-phone"></i> +503 2222-3333</p>
-        <p><i class="fa-solid fa-envelope"></i> contacto@amigofiel.com</p>
+        <p><i class="fa-solid fa-envelope"></i> contacto@ClínicaMisPatas.com</p>
     </div>
+    <h2>Nuestra Ubicacion</h2>
     <iframe src="https://maps.google.com/maps?q=San%20Salvador&t=&z=13&ie=UTF8&iwloc=&output=embed"
       width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <!-- CITAS -->
-  <section id="citas">
-    <div class="cita-card">
-      <h2>Solicita tu Cita</h2>
-      <form id="formCita">
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="text" placeholder="Teléfono" required>
-        <input type="date" required>
-        <textarea placeholder="Motivo de la cita" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="msgCita"></p>
-    </div>
-  </section>
-  <footer>
-    <img src="" alt="WhatsApp">
-    <img src="" alt="Facebook">
-    <img src="" alt="Instagram">
-    <img src="" alt="Tiktok">
-  </footer>
+<section id="citas">
+  <div class="cita-card">
+    <h2>Solicita tu Cita</h2>
+    <form id="formCita">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="text" placeholder="Teléfono" required>
+      <input type="date" required>
+      <textarea placeholder="Motivo de la cita" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="msgCita"></p>
+  </div>
+<h2>Tu Asesora Virtual</h2>
+  <!-- Botón flotante -->
+  <button id="chat-btn">💬</button>
 
+  <!-- Ventana del chat -->
+  <div id="chat-box">
+    <div id="chat-header">Asesora Virtual</div>
+    <div id="chat-messages"></div>
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+      <button id="send-btn">➤</button>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE DE PUBLICACIONES, ALIADOS Y ES DE INTERÉS -->
+<section id="Publicaciones">
+  <!-- Publicaciones -->
+  <div class="bloque-card">
+    <h2>Publicaciones</h2>
+    <div class="grid">
+      <article class="item">
+        <h3>Título de Publicación</h3>
+        <p>Un resumen breve de la publicación que sea de utilidad al usuario.</p>
+        <a href="#">Leer más</a>
+      </article>
+      <article class="item">
+        <h3>Título de Publicación</h3>
+        <p>Otro ejemplo de publicación destacada con enlace.</p>
+        <a href="#">Leer más</a>
+      </article>
+    </div>
+  </div>
+
+  <!-- Aliados -->
+  <div class="bloque-card">
+    <h2>Aliados</h2>
+    <div class="carrusel">
+      <button class="carrusel-btn prev">&#10094;</button>
+      <div class="carrusel-contenedor">
+        <div class="aliado">
+          <img src="https://via.placeholder.com/100x50" alt="Logo aliado">
+          <p>Aliado 1</p>
+        </div>
+        <div class="aliado">
+          <img src="https://via.placeholder.com/100x50" alt="Logo aliado">
+          <p>Aliado 2</p>
+        </div>
+        <div class="aliado">
+          <img src="https://via.placeholder.com/100x50" alt="Logo aliado">
+          <p>Aliado 3</p>
+        </div>
+        <div class="aliado">
+          <img src="https://via.placeholder.com/100x50" alt="Logo aliado">
+          <p>Aliado 4</p>
+        </div>
+      </div>
+      <button class="carrusel-btn next">&#10095;</button>
+    </div>
+  </div>
+  <!-- Es de interés -->
+  <div class="bloque-card">
+    <h2>Es de interés</h2>
+    <ul class="interes-lista">
+      <li><a href="#">Tema 1: Información importante</a></li>
+      <li><a href="#">Tema 2: Recurso de utilidad</a></li>
+      <li><a href="#">Tema 3: Enlace externo recomendado</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="bottom-menu">
+  <nav class="menu-nav">
+    <a data-section="eventos">Eventos</a>
+    <a data-section="noticias">Noticias</a>
+    <a data-section="convocatorias">Convocatorias</a>
+    <a data-section="datos">Datos</a>
+  </nav>
+</footer>
+
+<!-- Secciones del contenido -->
+<section id="eventos">
+  <h2>Eventos</h2>
+  <p>Próximos eventos relacionados con mascotas, jornadas de vacunación, ferias de adopción, y más.</p>
+</section>
+
+<section id="noticias">
+  <h2>Noticias</h2>
+  <p>Entérate de las últimas novedades del mundo veterinario, descubrimientos y legislación animal.</p>
+</section>
+
+<section id="convocatorias">
+  <h2>Convocatorias</h2>
+  <p>Abiertas las inscripciones para voluntariados, capacitaciones, y plazas de trabajo en AnimalCare.</p>
+</section>
+
+<section id="datos">
+  <h2>Datos</h2>
+  <p>Dirección, teléfonos, horarios de atención, servicios disponibles y contacto directo.</p>
+</section>
+
+<h2>Para mas informacion:</h2>
+<footer>
+  <div class="footer-container">
+    <!-- Información de contacto y registro -->
+    <div class="contact-info">
+      <h3>Información de Contacto</h3>
+      <p><strong>Correo:</strong> info@tuveterinaria.com</p>
+      <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</p>
+      <p><strong>Teléfono:</strong> +123 456 7890</p>
+      <p><strong>Registro Ministerio de Educación:</strong> 12345-6789</p>
+    </div>
+
+    <!-- Enlaces de redes sociales -->
+    <div class="social-links">
+      <h3>Redes Sociales</h3>
+      <a href="https://www.whatsapp.com" target="_blank">
+        <img src="imagenes/whatsapp.jpg" alt="WhatsApp">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com" target="_blank">
+        <img src="imagenes/tiktok.jpg" alt="Tiktok">
+      </a>
+    </div>
+
+    <!-- Links de descarga -->
+    <div class="download-links">
+      <h3>Descargar la App</h3>
+      <a href="https://play.google.com/store" target="_blank">
+        <img src="imagenes/google play.jpg" alt="Google Play">
+      </a>
+      <a href="https://apps.apple.com" target="_blank">
+        <img src="imagenes/app store.jpg" alt="App Store">
+      </a>
+    </div>
+  </div>
+</footer>
   <script src="js/app.js"></script>
 </body>
 </html>
